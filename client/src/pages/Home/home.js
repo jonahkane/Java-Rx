@@ -25,7 +25,7 @@ const Home = () => {
           ) : (
             <DrinkList
               drinks={drinks}
-              title="I need to think of something better to put here -*/-*/-*/-*/..."
+              title="Here are some of our user's favorite coffee drinks!"
             />
           )}
         </div>

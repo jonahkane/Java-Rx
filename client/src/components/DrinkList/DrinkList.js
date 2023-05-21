@@ -43,7 +43,7 @@ const DrinkList = ({
               className="btn btn-primary btn-block btn-squared"
               to={`/drinks/${drink._id}`}
             >
-              Join the discussion on this drink.
+              Share your thoughts on this drink.
             </Link>
           </div>
         ))}
