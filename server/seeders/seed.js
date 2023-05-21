@@ -8,10 +8,11 @@ db.once('open', async () => {
     await Drink.deleteMany({});
     await User.deleteMany({});
 
-    await User.create(userSeeds);
+    await User.insertMany(userSeeds);
+    //insert many for user and drink
 
     for (let i = 0; i < drinkSeeds.length; i++) {
-      const { _id, drinkAuthor } = await Drink.create(drinkSeeds[i]);
+      const { _id, drinkAuthor } = await Drink.insertMany(drinkSeeds[i]);
       const user = await User.findOneAndUpdate(
         { username: drinkAuthor },
         {

@@ -2,12 +2,12 @@ import React from 'react';
 import { Navigate, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
-import DrinkForm from '../components/DrinkForm';
-import DrinkList from '../components/DrinkList';
+import DrinkForm from '../../components/DrinkForm';
+import DrinkList from '../../components/DrinkList';
 
-import { QUERY_USER, QUERY_ME } from '../utils/queries';
+import { QUERY_USER, QUERY_ME } from '../../utils/queries';
 
-import Auth from '../utils/auth';
+import Auth from '../../utils/auth';
 
 const Profile = () => {
   const { username: userParam } = useParams();

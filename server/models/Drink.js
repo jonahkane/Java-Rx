@@ -14,12 +14,12 @@ const drinkSchema = new Schema({
     trim: true,
   },
   drinkIngredients: {
-    type: String,
+    type: Array,
     required: true,
     trim: true,
   },
   drinkInstructions: {
-    type: String,
+    type: Array,
     required: true,
     trim: true,
   },
