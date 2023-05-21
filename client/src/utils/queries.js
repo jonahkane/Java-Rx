@@ -8,7 +8,10 @@ export const QUERY_USER = gql`
       email
       drinks {
         _id
-        drinkText
+        drinkTitle
+        drinkIngredients
+        drinkInstructions
+        drinkImage
         createdAt
       }
     }
@@ -19,7 +22,10 @@ export const QUERY_DRINKS = gql`
   query getDrinks {
     drinks {
       _id
-      drinkText
+      drinkTitle
+      drinkIngredients
+      drinkInstructions
+      drinkImage
       drinkAuthor
       createdAt
     }
@@ -30,7 +36,10 @@ export const QUERY_SINGLE_DRINK = gql`
   query getSingleDrink($drinkId: ID!) {
     drink(drinkId: $drinkId) {
       _id
-      drinkText
+      drinkTitle
+      drinkIngredients
+      drinkInstructions
+      drinkImage
       drinkAuthor
       createdAt
       comments {
@@ -51,7 +60,10 @@ export const QUERY_ME = gql`
       email
       drinks {
         _id
-        drinkText
+        drinkTitle
+        drinkIngredients
+        drinkInstructions
+        drinkImage
         drinkAuthor
         createdAt
       }

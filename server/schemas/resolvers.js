@@ -48,10 +48,13 @@ const resolvers = {
 
       return { token, user };
     },
-    addDrink: async (parent, { drinkText }, context) => {
+    addDrink: async (parent, { drinkTitle, drinkImage }, context) => {
       if (context.user) {
         const drink = await Drink.create({
-          drinkText,
+          drinkTitle,
+          drinkIngredients,
+          drinkInstructions,
+          drinkImage,
           drinkAuthor: context.user.username,
         });
 

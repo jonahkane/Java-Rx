@@ -41,7 +41,7 @@ const SingleDrink = () => {
             lineHeight: '1.5',
           }}
         >
-          {drink.drinkText}
+          {drink.drinkTitle}
         </blockquote>
       </div>
 

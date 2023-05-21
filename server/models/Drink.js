@@ -2,13 +2,28 @@ const { Schema, model } = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
 
 const drinkSchema = new Schema({
-  drinkText: {
+  drinkTitle: {
     type: String,
     required: 'What kind of coffee drink do you like?',
     minlength: 1,
     maxlength: 280,
     trim: true,
   },
+  drinkImage: {
+    type: String,
+    trim: true,
+  },
+  drinkIngredients: {
+    type: String,
+    required: true,
+    trim: true,
+  },
+  drinkInstructions: {
+    type: String,
+    required: true,
+    trim: true,
+  },
+  
   drinkAuthor: {
     type: String,
     required: true,

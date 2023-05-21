@@ -37,7 +37,7 @@ const DrinkList = ({
               )}
             </h4>
             <div className="card-body bg-light p-2">
-              <p>{drink.drinkText}</p>
+              <p>{drink.drinkTitle}</p>
             </div>
             <Link
               className="btn btn-primary btn-block btn-squared"

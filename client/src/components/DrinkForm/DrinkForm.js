@@ -8,14 +8,15 @@ import { QUERY_DRINKS, QUERY_ME } from '../../utils/queries';
 import Auth from '../../utils/auth';
 
 const DrinkForm = () => {
-  const [drinkText, setDrinkText] = useState('');
+  const [drinkTitle, setDrinkTitle] = useState('');
+
 
   const [characterCount, setCharacterCount] = useState(0);
 
   const [addDrink, { error }] = useMutation(ADD_DRINK, {
     update(cache, { data: { addDrink } }) {
       try {
-        const { drinks } = cache.readQuery({ query: QUERY_DRINKS });
+        const { drinks }  = cache.readQuery({ query: QUERY_DRINKS });
 
         cache.writeQuery({
           query: QUERY_DRINKS,
@@ -40,12 +41,12 @@ const DrinkForm = () => {
     try {
       const { data } = await addDrink({
         variables: {
-          drinkText,
+          drinkTitle,
           drinkAuthor: Auth.getProfile().data.username,
         },
       });
 
-      setDrinkText('');
+      setDrinkTitle('');
     } catch (err) {
       console.error(err);
     }
@@ -54,11 +55,23 @@ const DrinkForm = () => {
   const handleChange = (event) => {
     const { name, value } = event.target;
 
-    if (name === 'drinkText' && value.length <= 280) {
-      setDrinkText(value);
+    if (name === 'drinkTitle' && value.length <= 280) {
+      setDrinkTitle(value);
       setCharacterCount(value.length);
     }
   };
+
+
+  
+
+
+
+
+
+
+
+
+
 
   return (
     <div>
@@ -79,9 +92,9 @@ const DrinkForm = () => {
           >
             <div className="col-12 col-lg-9">
               <textarea
-                name="drinkText"
+                name="drinkTitle"
                 placeholder="My favorite coffee drink is..."
-                value={drinkText}
+                value={drinkTitle}
                 className="form-input w-100"
                 style={{ lineHeight: '1.5', resize: 'vertical' }}
                 onChange={handleChange}

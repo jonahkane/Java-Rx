@@ -11,7 +11,10 @@ const typeDefs = gql`
 
   type Drink {
     _id: ID
-    drinkText: String
+    drinkTitle: String
+    drinkIngredients: String
+    drinkInstructions: String
+    drinkImage: String
     drinkAuthor: String
     createdAt: String
     comments: [Comment]!
@@ -28,6 +31,7 @@ const typeDefs = gql`
     token: ID!
     user: User
   }
+  
 
   type Query {
     users: [User]
@@ -40,7 +44,7 @@ const typeDefs = gql`
   type Mutation {
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
-    addDrink(drinkText: String!): Drink
+    addDrink(drinkTitle: String!, drinkIngredients: Sting, drinkInstructions: String, drinkImage: String): Drink
     addComment(drinkId: ID!, commentText: String!): Drink
     removeDrink(drinkId: ID!): Drink
     removeComment(drinkId: ID!, commentId: ID!): Drink
