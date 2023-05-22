@@ -1,5 +1,5 @@
 {
-  "name": "java-rx",
+  "name": "mern-server",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -10,7 +10,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "MIT",
+  "license": "ISC",
   "dependencies": {
     "apollo-server-express": "^3.6.2",
     "bcrypt": "^5.0.0",
