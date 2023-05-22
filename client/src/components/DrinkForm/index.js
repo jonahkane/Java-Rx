@@ -10,6 +10,7 @@ import Auth from "../../utils/auth";
 const DrinkForm = () => {
   const [drinkTitle, setDrinkTitle] = useState("");
   const [drinkIngredients, setDrinkIngredients] = useState("");
+  const [drinkInstructions, setDrinkInstructions] = useState("");
 
   // const [characterCount, setCharacterCount] = useState(0);
 
@@ -42,11 +43,15 @@ const DrinkForm = () => {
       const { data } = await addDrink({
         variables: {
           drinkTitle,
+          drinkIngredients,
+          drinkInstructions,
           drinkAuthor: Auth.getProfile().data.username,
         },
       });
 
       setDrinkTitle("");
+      setDrinkIngredients("");
+      setDrinkInstructions("");
     } catch (err) {
       console.error(err);
     }
@@ -60,10 +65,26 @@ const DrinkForm = () => {
       // setCharacterCount(value.length);
     }
   };
+  const handleIngredientsChange = (event) => {
+    const { name, value } = event.target;
+
+    if (name === "drinkIngredients" && value.length <= 280) {
+      setDrinkIngredients(value);
+      // setCharacterCount(value.length);
+    }
+  };
+  const handleInstructionsChange = (event) => {
+    const { name, value } = event.target;
+
+    if (name === "drinkInstructions" && value.length <= 280) {
+      setDrinkInstructions(value);
+      // setCharacterCount(value.length);
+    }
+  };
 
   return (
     <div>
-      <h3>What's on your favorite espresso drink?</h3>
+      <h3>What is your favorite coffee drink?</h3>
 
       {Auth.loggedIn() ? (
         <>
@@ -91,19 +112,19 @@ const DrinkForm = () => {
               <textarea
                 name="drinkIngredients"
                 placeholder="This ingredients of this drink are..."
-                value={drinkTitle}
+                value={drinkIngredients}
                 className="form-input w-100"
                 style={{ lineHeight: "1.5", resize: "vertical" }}
-                onChange={handleChange}
+                onChange={handleIngredientsChange}
               ></textarea>
 
               <textarea
                 name="drinkInstructions"
                 placeholder="To make this drink you need to..."
-                value={drinkTitle}
+                value={drinkInstructions}
                 className="form-input w-100"
                 style={{ lineHeight: "1.5", resize: "vertical" }}
-                onChange={handleChange}
+                onChange={handleInstructionsChange}
               ></textarea>
             </div>
 

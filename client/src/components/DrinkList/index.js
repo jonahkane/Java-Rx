@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const DrinkList = ({
   drinks,
@@ -24,13 +24,13 @@ const DrinkList = ({
                   to={`/profiles/${drink.drinkAuthor}`}
                 >
                   {drink.drinkAuthor} <br />
-                  <span style={{ fontSize: '1rem' }}>
+                  <span style={{ fontSize: "1rem" }}>
                     shared this drink on {drink.createdAt}
                   </span>
                 </Link>
               ) : (
                 <>
-                  <span style={{ fontSize: '1rem' }}>
+                  <span style={{ fontSize: "1rem" }}>
                     You shared this drink on {drink.createdAt}
                   </span>
                 </>
@@ -38,6 +38,8 @@ const DrinkList = ({
             </h4>
             <div className="card-body bg-light p-2">
               <p>{drink.drinkTitle}</p>
+              <p>{drink.drinkIngredients}</p>
+              <p>{drink.drinkInstructions}</p>
             </div>
             <Link
               className="btn btn-primary btn-block btn-squared"

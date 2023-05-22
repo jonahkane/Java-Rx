@@ -1,5 +1,5 @@
 [
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Martini",
       "drinkIngredients": ["1 shot espresso", "1 1/2 ounces vodka", "1 ounce coffee liqueur", "1/2 ounce simple syrup", "Ice cubes", "Coffee beans (for garnish)"],
       "drinkInstructions": [
@@ -11,7 +11,7 @@
         "Garnish with coffee beans."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Cappuccino",
       "drinkIngredients": ["1 shot espresso", "1/2 cup steamed milk", "1/2 cup foam"],
       "drinkInstructions": [
@@ -22,7 +22,7 @@
         "Top with foam."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Caffè Latte",
       "drinkIngredients": ["1 shot espresso", "1 cup steamed milk", "1 tablespoon foam"],
       "drinkInstructions": [
@@ -33,7 +33,7 @@
         "Top with foam."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Macchiato",
       "drinkIngredients": ["1 shot espresso", "A dollop of milk foam"],
       "drinkInstructions": [
@@ -42,7 +42,7 @@
         "Serve immediately."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Caramel Macchiato",
       "drinkIngredients": ["1 shot espresso", "1 cup steamed milk", "1 tablespoon caramel syrup", "Whipped cream (optional)"],
       "drinkInstructions": [
@@ -54,7 +54,7 @@
         "Top with whipped cream (optional)."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Mocha",
       "drinkIngredients": ["1 shot espresso", "1 cup steamed milk", "2 tablespoons chocolate syrup", "Whipped cream (optional)"],
       "drinkInstructions": [
@@ -66,7 +66,7 @@
         "Top with whipped cream (optional)."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Con Panna",
       "drinkIngredients": ["1 shot espresso", "Whipped cream"],
       "drinkInstructions": [
@@ -75,7 +75,7 @@
         "Serve immediately."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Iced Espresso",
       "drinkIngredients": ["2 shots espresso", "1 cup cold milk", "1 tablespoon sugar (optional)", "Ice cubes"],
       "drinkInstructions": [
@@ -86,7 +86,7 @@
         "Stir and serve."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Frappuccino",
       "drinkIngredients": ["1 shot espresso", "1 cup milk", "1/4 cup sugar", "1 cup ice cubes"],
       "drinkInstructions": [
@@ -98,7 +98,7 @@
         "Serve chilled."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Affogato",
       "drinkIngredients": ["1 shot espresso", "1 scoop vanilla ice cream"],
       "drinkInstructions": [
@@ -108,7 +108,7 @@
         "Let the ice cream melt slightly and serve."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Tonic",
       "drinkIngredients": ["1 shot espresso", "Tonic water", "Lemon twist (for garnish)"],
       "drinkInstructions": [
@@ -120,7 +120,7 @@
         "Stir gently and serve."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Irish Cream",
       "drinkIngredients": ["1 shot espresso", "1 ounce Irish cream liqueur", "Whipped cream (for garnish)"],
       "drinkInstructions": [
@@ -131,7 +131,7 @@
         "Serve immediately."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Granita",
       "drinkIngredients": ["2 shots espresso", "1/4 cup sugar", "1/2 teaspoon vanilla extract"],
       "drinkInstructions": [
@@ -145,7 +145,7 @@
         "Serve in glasses."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Eggnog",
       "drinkIngredients": ["1 shot espresso", "1 cup eggnog", "Ground nutmeg (for garnish)"],
       "drinkInstructions": [
@@ -157,7 +157,7 @@
         "Serve immediately."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Chocolate Smoothie",
       "drinkIngredients": ["1 shot espresso", "1 ripe banana", "1 cup almond milk", "1 tablespoon cocoa powder", "1 tablespoon honey", "1/2 cup ice cubes"],
       "drinkInstructions": [
@@ -169,7 +169,7 @@
         "Serve chilled."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Hot Chocolate",
       "drinkIngredients": ["1 shot espresso", "1 cup milk", "2 tablespoons cocoa powder", "2 tablespoons sugar", "Whipped cream (for garnish)"],
       "drinkInstructions": [
@@ -183,7 +183,7 @@
         "Serve hot."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Coconut Smoothie",
       "drinkIngredients": ["1 shot espresso", "1/2 cup coconut milk", "1 ripe banana", "1 tablespoon honey", "1/2 cup ice cubes", "Shredded coconut (for garnish)"],
       "drinkInstructions": [
@@ -195,7 +195,7 @@
         "Serve chilled."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Mint Julep",
       "drinkIngredients": ["1 shot espresso", "1 tablespoon fresh mint leaves", "1 teaspoon sugar", "Crushed ice", "Mint sprig (for garnish)"],
       "drinkInstructions": [
@@ -208,7 +208,7 @@
         "Serve immediately."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Orange Spritzer",
       "drinkIngredients": ["1 shot espresso", "1/2 cup orange juice", "Club soda", "Orange slice (for garnish)"],
       "drinkInstructions": [
@@ -220,7 +220,7 @@
         "Stir gently and serve."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Banana Smoothie",
       "drinkIngredients": ["1 shot espresso", "1 ripe banana", "1/2 cup Greek yogurt", "1 tablespoon honey", "1/2 teaspoon vanilla extract", "1/2 cup ice cubes"],
       "drinkInstructions": [
@@ -232,7 +232,7 @@
         "Serve chilled."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Hazelnut Latte",
       "drinkIngredients": ["1 shot espresso", "1 cup steamed milk", "1 tablespoon hazelnut syrup", "Whipped cream (for garnish)", "Chopped hazelnuts (for garnish)"],
       "drinkInstructions": [
@@ -246,7 +246,7 @@
         "Serve hot."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Coconut Iced Latte",
       "drinkIngredients": ["1 shot espresso", "1/2 cup coconut milk", "1/2 cup cold milk", "1 tablespoon agave syrup", "Ice cubes"],
       "drinkInstructions": [
@@ -258,7 +258,7 @@
         "Serve chilled."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Almond Milk Latte",
       "drinkIngredients": ["1 shot espresso", "1 cup almond milk", "1 teaspoon honey", "Ground cinnamon (for garnish)"],
       "drinkInstructions": [
@@ -271,7 +271,7 @@
         "Serve hot."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Chai Latte",
       "drinkIngredients": ["1 shot espresso", "1/2 cup brewed chai tea", "1/2 cup steamed milk", "Cinnamon powder (for garnish)"],
       "drinkInstructions": [
@@ -285,7 +285,7 @@
         "Serve hot."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Amaretto",
       "drinkIngredients": ["1 shot espresso", "1 ounce amaretto liqueur", "Whipped cream (for garnish)", "Toasted almonds (for garnish)"],
       "drinkInstructions": [
@@ -297,7 +297,7 @@
         "Serve immediately."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Caramel Macadamia Latte",
       "drinkIngredients": ["1 shot espresso", "1 cup steamed milk", "1 tablespoon caramel syrup", "1 tablespoon macadamia syrup", "Whipped cream (for garnish)", "Crushed macadamia nuts (for garnish)"],
       "drinkInstructions": [
@@ -311,7 +311,7 @@
         "Serve hot."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Gingerbread Latte",
       "drinkIngredients": ["1 shot espresso", "1 cup steamed milk", "1 tablespoon gingerbread syrup", "Whipped cream (for garnish)", "Ground cinnamon (for garnish)"],
       "drinkInstructions": [
@@ -325,7 +325,7 @@
         "Serve hot."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Nutella Mocha",
       "drinkIngredients": ["1 shot espresso", "1 cup steamed milk", "2 tablespoons Nutella", "Whipped cream (for garnish)", "Cocoa powder (for garnish)"],
       "drinkInstructions": [
@@ -339,7 +339,7 @@
         "Serve hot."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Maple Latte",
       "drinkIngredients": ["1 shot espresso", "1 cup steamed milk", "1 tablespoon maple syrup", "Whipped cream (for garnish)", "Maple flakes (for garnish)"],
       "drinkInstructions": [
@@ -353,7 +353,7 @@
         "Serve hot."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Raspberry Mocha",
       "drinkIngredients": ["1 shot espresso", "1 cup steamed milk", "2 tablespoons chocolate syrup", "1 tablespoon raspberry syrup", "Whipped cream (for garnish)", "Fresh raspberries (for garnish)"],
       "drinkInstructions": [
@@ -367,7 +367,7 @@
         "Serve hot."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Hazelnut Mocha",
       "drinkIngredients": ["1 shot espresso", "1 cup steamed milk", "2 tablespoons chocolate syrup", "1 tablespoon hazelnut syrup", "Whipped cream (for garnish)", "Chopped hazelnuts (for garnish)"],
       "drinkInstructions": [
@@ -381,7 +381,7 @@
         "Serve hot."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Orange Mocha",
       "drinkIngredients": ["1 shot espresso", "1 cup steamed milk", "2 tablespoons chocolate syrup", "1 tablespoon orange syrup", "Whipped cream (for garnish)", "Orange zest (for garnish)"],
       "drinkInstructions": [
@@ -395,7 +395,7 @@
         "Serve hot."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Hazelnut Coconut Latte",
       "drinkIngredients": ["1 shot espresso", "1 cup steamed coconut milk", "1 tablespoon hazelnut syrup", "Whipped cream (for garnish)", "Toasted coconut flakes (for garnish)"],
       "drinkInstructions": [
@@ -409,7 +409,7 @@
         "Serve hot."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Caramel Cappuccino",
       "drinkIngredients": ["1 shot espresso", "1/2 cup steamed milk", "1 tablespoon caramel syrup", "Whipped cream (for garnish)", "Caramel sauce (for garnish)"],
       "drinkInstructions": [
@@ -423,7 +423,7 @@
         "Serve hot."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Coconut Almond Latte",
       "drinkIngredients": ["1 shot espresso", "1 cup steamed coconut milk", "1 tablespoon almond syrup", "Whipped cream (for garnish)", "Toasted almond slices (for garnish)"],
       "drinkInstructions": [
@@ -437,7 +437,7 @@
         "Serve hot."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Lavender Latte",
       "drinkIngredients": ["1 shot espresso", "1 cup steamed milk", "1 tablespoon lavender syrup", "Whipped cream (for garnish)", "Dried lavender buds (for garnish)"],
       "drinkInstructions": [
@@ -451,7 +451,7 @@
         "Serve hot."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Mocha Frappe",
       "drinkIngredients": ["1 shot espresso", "1 cup milk", "2 tablespoons chocolate syrup", "1 tablespoon sugar", "1 cup ice cubes", "Whipped cream (for garnish)", "Chocolate shavings (for garnish)"],
       "drinkInstructions": [
@@ -465,7 +465,7 @@
         "Serve chilled."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Mint Chocolate Chip Frappe",
       "drinkIngredients": ["1 shot espresso", "1 cup milk", "2 tablespoons chocolate syrup", "1/2 teaspoon mint extract", "1 cup ice cubes", "Whipped cream (for garnish)", "Chocolate chips (for garnish)"],
       "drinkInstructions": [
@@ -479,7 +479,7 @@
         "Serve chilled."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Raspberry Smoothie",
       "drinkIngredients": ["1 shot espresso", "1/2 cup raspberry yogurt", "1/2 cup frozen raspberries", "1/2 cup milk", "1 tablespoon honey", "1/2 cup ice cubes", "Fresh raspberries (for garnish)"],
       "drinkInstructions": [
@@ -491,7 +491,7 @@
         "Serve chilled."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Coconut Banana Smoothie",
       "drinkIngredients": ["1 shot espresso", "1/2 cup coconut milk", "1 ripe banana", "1 tablespoon honey", "1/2 cup ice cubes", "Shredded coconut (for garnish)"],
       "drinkInstructions": [
@@ -503,7 +503,7 @@
         "Serve chilled."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Strawberry Banana Smoothie",
       "drinkIngredients": ["1 shot espresso", "1/2 cup strawberry yogurt", "1 ripe banana", "1/2 cup frozen strawberries", "1/2 cup milk", "1 tablespoon honey", "1/2 cup ice cubes", "Fresh strawberries (for garnish)"],
       "drinkInstructions": [
@@ -515,7 +515,7 @@
         "Serve chilled."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Mango Smoothie",
       "drinkIngredients": ["1 shot espresso", "1/2 cup mango yogurt", "1/2 cup frozen mango chunks", "1/2 cup milk", "1 tablespoon honey", "1/2 cup ice cubes", "Fresh mango slices (for garnish)"],
       "drinkInstructions": [
@@ -527,7 +527,7 @@
         "Serve chilled."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Pineapple Coconut Smoothie",
       "drinkIngredients": ["1 shot espresso", "1/2 cup pineapple juice", "1/2 cup coconut milk", "1/2 cup frozen pineapple chunks", "1 tablespoon honey", "1/2 cup ice cubes", "Pineapple wedge (for garnish)"],
       "drinkInstructions": [
@@ -539,7 +539,7 @@
         "Serve chilled."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Green Tea Smoothie",
       "drinkIngredients": ["1 shot espresso", "1/2 cup green tea", "1/2 cup almond milk", "1 tablespoon honey", "1/2 cup spinach leaves", "1/2 cup frozen banana slices", "1/2 cup ice cubes", "Fresh mint leaves (for garnish)"],
       "drinkInstructions": [
@@ -551,7 +551,7 @@
         "Serve chilled."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Blueberry Smoothie",
       "drinkIngredients": ["1 shot espresso", "1/2 cup blueberry yogurt", "1/2 cup frozen blueberries", "1/2 cup milk", "1 tablespoon honey", "1/2 cup ice cubes", "Fresh blueberries (for garnish)"],
       "drinkInstructions": [
@@ -563,7 +563,7 @@
         "Serve chilled."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Peanut Butter Smoothie",
       "drinkIngredients": ["1 shot espresso", "1/2 cup milk", "1 ripe banana", "2 tablespoons peanut butter", "1 tablespoon honey", "1/2 cup ice cubes", "Crushed peanuts (for garnish)"],
       "drinkInstructions": [
@@ -575,7 +575,7 @@
         "Serve chilled."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Protein Shake",
       "drinkIngredients": ["1 shot espresso", "1/2 cup milk", "1 scoop chocolate protein powder", "1 tablespoon almond butter", "1 tablespoon honey", "1/2 cup ice cubes", "Dark chocolate shavings (for garnish)"],
       "drinkInstructions": [
@@ -587,7 +587,7 @@
         "Serve chilled."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Oatmeal Smoothie",
       "drinkIngredients": ["1 shot espresso", "1/2 cup brewed oatmeal", "1/2 cup milk", "1 ripe banana", "1 tablespoon almond butter", "1 tablespoon honey", "1/2 teaspoon cinnamon", "1/2 cup ice cubes", "Rolled oats (for garnish)"],
       "drinkInstructions": [
@@ -599,7 +599,7 @@
         "Serve chilled."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Breakfast Smoothie",
       "drinkIngredients": ["1 shot espresso", "1/2 cup Greek yogurt", "1/2 cup milk", "1/4 cup rolled oats", "1 tablespoon almond butter", "1 tablespoon honey", "1/2 teaspoon vanilla extract", "1/2 cup ice cubes", "Sliced almonds (for garnish)"],
       "drinkInstructions": [
@@ -611,7 +611,7 @@
         "Serve chilled."
       ]
     },
-    { "drinkAuthor": "Your local barista",
+    { "drinkAuthor": "Barista",
       "drinkTitle": "Espresso Avocado Smoothie",
       "drinkIngredients": ["1 shot espresso", "1/2 ripe avocado", "1/2 cup milk", "1 tablespoon honey", "1/2 teaspoon vanilla extract", "1/2 cup ice cubes", "Mint sprig (for garnish)"],
       "drinkInstructions": [
