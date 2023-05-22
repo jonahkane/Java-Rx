@@ -1,22 +1,22 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useMutation } from '@apollo/client';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { useMutation } from "@apollo/client";
 
-import { ADD_DRINK } from '../../utils/mutations';
-import { QUERY_DRINKS, QUERY_ME } from '../../utils/queries';
+import { ADD_DRINK } from "../../utils/mutations";
+import { QUERY_DRINKS, QUERY_ME } from "../../utils/queries";
 
-import Auth from '../../utils/auth';
+import Auth from "../../utils/auth";
 
 const DrinkForm = () => {
-  const [drinkTitle, setDrinkTitle] = useState('');
+  const [drinkTitle, setDrinkTitle] = useState("");
+  const [drinkIngredients, setDrinkIngredients] = useState("");
 
-
-  const [characterCount, setCharacterCount] = useState(0);
+  // const [characterCount, setCharacterCount] = useState(0);
 
   const [addDrink, { error }] = useMutation(ADD_DRINK, {
     update(cache, { data: { addDrink } }) {
       try {
-        const { drinks }  = cache.readQuery({ query: QUERY_DRINKS });
+        const { drinks } = cache.readQuery({ query: QUERY_DRINKS });
 
         cache.writeQuery({
           query: QUERY_DRINKS,
@@ -46,7 +46,7 @@ const DrinkForm = () => {
         },
       });
 
-      setDrinkTitle('');
+      setDrinkTitle("");
     } catch (err) {
       console.error(err);
     }
@@ -55,23 +55,11 @@ const DrinkForm = () => {
   const handleChange = (event) => {
     const { name, value } = event.target;
 
-    if (name === 'drinkTitle' && value.length <= 280) {
+    if (name === "drinkTitle" && value.length <= 280) {
       setDrinkTitle(value);
-      setCharacterCount(value.length);
+      // setCharacterCount(value.length);
     }
   };
-
-
-  
-
-
-
-
-
-
-
-
-
 
   return (
     <div>
@@ -79,13 +67,13 @@ const DrinkForm = () => {
 
       {Auth.loggedIn() ? (
         <>
-          <p
+          {/* <p
             className={`m-0 ${
-              characterCount === 280 || error ? 'text-danger' : ''
+              characterCount === 280 || error ? "text-danger" : ""
             }`}
           >
             Character Count: {characterCount}/280
-          </p>
+          </p> */}
           <form
             className="flex-row justify-center justify-space-between-md align-center"
             onSubmit={handleFormSubmit}
@@ -96,7 +84,25 @@ const DrinkForm = () => {
                 placeholder="My favorite coffee drink is..."
                 value={drinkTitle}
                 className="form-input w-100"
-                style={{ lineHeight: '1.5', resize: 'vertical' }}
+                style={{ lineHeight: "1.5", resize: "vertical" }}
+                onChange={handleChange}
+              ></textarea>
+
+              <textarea
+                name="drinkIngredients"
+                placeholder="This ingredients of this drink are..."
+                value={drinkTitle}
+                className="form-input w-100"
+                style={{ lineHeight: "1.5", resize: "vertical" }}
+                onChange={handleChange}
+              ></textarea>
+
+              <textarea
+                name="drinkInstructions"
+                placeholder="To make this drink you need to..."
+                value={drinkTitle}
+                className="form-input w-100"
+                style={{ lineHeight: "1.5", resize: "vertical" }}
                 onChange={handleChange}
               ></textarea>
             </div>
@@ -115,8 +121,9 @@ const DrinkForm = () => {
         </>
       ) : (
         <p>
-          You need to be logged in to share your favorite drinks and thoughts. Please{' '}
-          <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
+          You need to be logged in to share your favorite drinks and thoughts.
+          Please <Link to="/login">login</Link> or{" "}
+          <Link to="/signup">signup.</Link>
         </p>
       )}
     </div>

@@ -44,6 +44,36 @@ const SingleDrink = () => {
           {drink.drinkTitle}
         </blockquote>
       </div>
+      <div className="bg-light py-4">
+        <blockquote
+          className="p-4"
+          style={{
+            fontSize: '1.5rem',
+            fontStyle: 'italic',
+            border: '2px dotted #1a1a1a',
+            lineHeight: '1.5',
+          }}
+        >
+
+          {drink.drinkIngredients}
+          </blockquote>
+      </div>
+
+          <div className="bg-light py-4">
+        <blockquote
+          className="p-4"
+          style={{
+            fontSize: '1.5rem',
+            fontStyle: 'italic',
+            border: '2px dotted #1a1a1a',
+            lineHeight: '1.5',
+          }}
+        >
+
+          {drink.drinkInstructions}
+          </blockquote>
+      </div>
+
 
       <div className="my-5">
         <CommentList comments={drink.comments} />
