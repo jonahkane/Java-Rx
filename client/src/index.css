@@ -1727,3 +1727,15 @@ label form [type='radio'] {
 #footer > a {
   margin: 15px;
 }
+.bg-image {
+  background-image: url(https://fastly.picsum.photos/id/42/3456/2304.jpg?hmac=dhQvd1Qp19zg26MEwYMnfz34eLnGv8meGk_lFNAJR3g);
+  background-size:cover;
+  position: absolute;       
+  left: 0px;       
+  top: 0px;       
+  z-index: -1;       
+  width: 110%;      
+  height: 110%;       
+  -webkit-filter: blur(3px); /* Safari 6.0 - 9.0 */       
+  filter: blur(3px);
+}
