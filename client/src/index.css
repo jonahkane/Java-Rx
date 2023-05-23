@@ -18,6 +18,8 @@ code {
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+
+ @import url('../node_modules/font-awesome/css/font-awesome.min.css');
  html {
   line-height: 1.15;
   /* 1 */
@@ -1718,4 +1720,10 @@ label form [type='radio'] {
   .align-content-center-xl {
     align-content: center;
   }
+}
+#footer {
+  text-align: center;
+}
+#footer > a {
+  margin: 15px;
 }
