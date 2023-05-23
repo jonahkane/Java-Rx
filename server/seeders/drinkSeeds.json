@@ -20,7 +20,9 @@
         "Pour espresso into a cup.",
         "Add steamed milk.",
         "Top with foam."
-      ]
+      ],
+      "drinkImageURL": "`https://res.cloudinary.com/dtrmeorgv/image/upload/v1684729237/Cappuccino_bz4gia.jpg`"
+
     },
     { "drinkAuthor": "Barista",
       "drinkTitle": "Caffè Latte",
