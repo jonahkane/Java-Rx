@@ -85,7 +85,7 @@ const DrinkForm = ({ setDrinksListCurrent }) => {
 
   return (
     <div>
-      <h3>What is your favorite coffee drink?</h3>
+      <h3>What's your order?</h3>
 
       {Auth.loggedIn() ? (
         <>
