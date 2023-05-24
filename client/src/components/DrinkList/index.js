@@ -11,9 +11,9 @@ const DrinkList = ({
   useEffect(() => {}, [drinks]);
 
   if (!drinks?.length) {
-    return <h3>No Drinks Yet</h3>;
+    return <h3>No drink reviews yet</h3>;
   }
-
+<h4>Write a review</h4>
   return (
     <div>
       {showTitle && <h3>{title}</h3>}

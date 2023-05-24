@@ -144,9 +144,10 @@ const DrinkForm = ({ setDrinksListCurrent }) => {
         </>
       ) : (
         <p>
-          You need to be logged in to share your favorite drinks and thoughts.
+          
           Please <Link to="/login">login</Link> or{" "}
-          <Link to="/signup">signup.</Link>
+          <Link to="/signup">signup </Link>
+          to share your favorite drink and leave a review!
         </p>
       )}
     </div>
