@@ -77,7 +77,7 @@ const CommentForm = ({ drinkId }) => {
         </>
       ) : (
         <p>
-          You need to be logged in to share your favorite drinks and thoughts. Please{' '}
+          
           <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
         </p>
       )}
