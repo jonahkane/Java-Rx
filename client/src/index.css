@@ -49,11 +49,12 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 h1 {
-  font-family: 'Diplomata', cursive !important;
+/* font-family: 'Diplomata', cursive !important; */
 font-family: 'Rubik Vinyl', cursive !important;
-  font-size: 5em !important;
+  font-size: 6em !important;
   margin: 0.67em 0;
-  color: #2c2c2c;
+  color: #241a05;
+  text-shadow: 2px 2px #755353
 }
 
 /* Grouping content
@@ -942,7 +943,7 @@ a:hover {
 
 /* BACKGROUND UTILS */
 .bg-primary {
-  background-color: #DDD0C8 !important;
+  background-color: transparent !important;
 }
 
 .bg-info {
@@ -1024,7 +1025,7 @@ a:hover {
 
 .btn.btn-lg {
   font-size: 1.25rem;
-  padding: 0.8rem 1.4rem;
+  padding: 0.8rem 2rem;
 }
 
 .btn.btn-block {
@@ -1052,21 +1053,21 @@ a:hover {
 }
 
 .btn.btn-info {
-  background-color: #323232;
+  background-color: #cc88da;
   color: #ffffff;
 }
 
 .btn.btn-info:hover {
-  background-color: #a5a5a5;
+  background-color: #dabae0;
 }
 
 .btn.btn-light {
-  background-color: #e7e7e7;
-  color: #1a1a1a;
+  background-color: #63c790;
+  color: #ffffff;
 }
 
 .btn.btn-light:hover {
-  background-color: #323232;
+  background-color: #abdfcb;
 }
 
 .btn.btn-dark {
@@ -1166,13 +1167,13 @@ form .form-label {
 
 form .form-input {
   width: 100%;
-  padding: 0.75rem;
-  color: #323232;
-  background-color: #ffffff;
+  padding: 1rem;
+  color: #000000;
+  background-color: transparent;
   margin: 0.625rem 0;
   font-size: 1.2rem;
-  border: 1px solid #484848;
-  border-radius: 0.3rem;
+  border: 1px solid #272727;
+  border-radius: 1rem;
 }
 
 form .form-input.form-input-squared {
