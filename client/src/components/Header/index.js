@@ -15,7 +15,7 @@ const Header = () => {
           <Link className="text-light" to="/">
             <h1 className="m-0">Java Rx</h1>
           </Link>
-          <p className="m-0">I've got a fever, and the only prescription is more coffee!</p>
+          <p className="m-3">A simple tool to share your favorite brews</p>
         </div>
         <div>
           {Auth.loggedIn() ? (
@@ -29,7 +29,7 @@ const Header = () => {
             </>
           ) : (
             <>
-              <Link className="btn btn-lg btn-info m-2" to="/login">
+              <Link className="btn btn-primary btn-lg btn-info m-2" to="/login">
                 Login
               </Link>
               <Link className="btn btn-lg btn-light m-2" to="/signup">

@@ -18,8 +18,9 @@ code {
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-
+ @import url('https://fonts.googleapis.com/css2?family=Diplomata&family=Rubik+Vinyl&display=swap');
  @import url('../node_modules/font-awesome/css/font-awesome.min.css');
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
  html {
   line-height: 1.15;
   /* 1 */
@@ -48,8 +49,11 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 h1 {
-  font-size: 2em;
+  font-family: 'Diplomata', cursive !important;
+font-family: 'Rubik Vinyl', cursive !important;
+  font-size: 5em !important;
   margin: 0.67em 0;
+  color: #2c2c2c;
 }
 
 /* Grouping content
@@ -384,7 +388,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
   margin: 0 0 0.5rem;
   line-height: 1.25;
 }
@@ -414,7 +418,10 @@ h6 {
 }
 
 p {
-  font-size: 1.1rem;
+  font-family: 'Montserrat', sans-serif !important;
+
+  color: #000000;
+  font-size: 2rem;
   margin: 0 0 1rem;
   line-height: 1.5;
 }
@@ -438,12 +445,12 @@ button {
 }
 
 a {
-  color: #1b89bc;
+  color: #c7c7c7;
   text-decoration: none;
 }
 
 a:hover {
-  color: #065b83;
+  color: #ffffff;
   text-decoration: underline;
 }
 
@@ -918,7 +925,7 @@ a:hover {
 }
 
 .text-dark {
-  color: #1a1a1a !important;
+  color: #323232 !important;
 }
 
 .text-white {
@@ -926,7 +933,7 @@ a:hover {
 }
 
 .text-black {
-  color: #000000 !important;
+  color: #323232 !important;
 }
 
 .text-link {
@@ -935,7 +942,7 @@ a:hover {
 
 /* BACKGROUND UTILS */
 .bg-primary {
-  background-color: #2d3e50 !important;
+  background-color: #DDD0C8 !important;
 }
 
 .bg-info {
@@ -951,7 +958,7 @@ a:hover {
 }
 
 .bg-dark {
-  background-color: #1a1a1a !important;
+  background-color: #323232 !important;
 }
 
 .bg-white {
@@ -959,7 +966,7 @@ a:hover {
 }
 
 .bg-black {
-  background-color: #000000 !important;
+  background-color: #323232 !important;
 }
 
 .bg-link {
@@ -997,7 +1004,7 @@ a:hover {
   border-radius: 0.3rem;
   border: 1px solid transparent;
   outline: none;
-  color: #1a1a1a;
+  color: #323232;
   background-color: #aeaeae;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
@@ -1027,12 +1034,12 @@ a:hover {
 }
 
 .btn.btn-primary {
-  background-color: #2d3e50;
+  background-color: #323232;
   color: #d9e9e8;
 }
 
 .btn.btn-primary:hover {
-  background-color: #57779a;
+  background-color: #bebebe;
 }
 
 .btn.btn-danger {
@@ -1045,12 +1052,12 @@ a:hover {
 }
 
 .btn.btn-info {
-  background-color: #1bbc9b;
+  background-color: #323232;
   color: #ffffff;
 }
 
 .btn.btn-info:hover {
-  background-color: #31e1bd;
+  background-color: #a5a5a5;
 }
 
 .btn.btn-light {
@@ -1059,11 +1066,11 @@ a:hover {
 }
 
 .btn.btn-light:hover {
-  background-color: #84b8b4;
+  background-color: #323232;
 }
 
 .btn.btn-dark {
-  background-color: #1a1a1a;
+  background-color: #323232;
   color: #d9e9e8;
 }
 
@@ -1099,13 +1106,13 @@ a:hover {
 }
 
 .card {
-  border: 1px solid #1a1a1a;
+  border: 1px solid #323232;
   margin-bottom: 1rem;
 }
 
 .card .card-header {
   padding: 0.375rem;
-  background-color: #2d3e50;
+  background-color: #414141;
   color: #d9e9e8;
 }
 
@@ -1114,7 +1121,7 @@ a:hover {
 }
 
 .card .card-footer {
-  border-top: 1px solid #1a1a1a;
+  border-top: 1px solid #323232;
   padding: 0.375rem;
 }
 
@@ -1160,7 +1167,7 @@ form .form-label {
 form .form-input {
   width: 100%;
   padding: 0.75rem;
-  color: #1a1a1a;
+  color: #323232;
   background-color: #ffffff;
   margin: 0.625rem 0;
   font-size: 1.2rem;
@@ -1723,6 +1730,7 @@ label form [type='radio'] {
 }
 #footer {
   text-align: center;
+  color: ;
 }
 #footer > a {
   margin: 15px;
