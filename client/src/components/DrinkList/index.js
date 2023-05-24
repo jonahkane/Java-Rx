@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Image } from "cloudinary-react";
 
@@ -8,6 +8,8 @@ const DrinkList = ({
   showTitle = true,
   showUsername = true,
 }) => {
+  useEffect(() => {}, [drinks]);
+
   if (!drinks?.length) {
     return <h3>No Drinks Yet</h3>;
   }

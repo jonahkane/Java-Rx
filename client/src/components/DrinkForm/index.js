@@ -7,7 +7,7 @@ import { QUERY_DRINKS, QUERY_ME } from "../../utils/queries";
 
 import Auth from "../../utils/auth";
 
-const DrinkForm = () => {
+const DrinkForm = ({ setDrinksListCurrent }) => {
   const [drinkTitle, setDrinkTitle] = useState("");
   const [drinkIngredients, setDrinkIngredients] = useState("");
   const [drinkInstructions, setDrinkInstructions] = useState("");
@@ -28,11 +28,11 @@ const DrinkForm = () => {
       }
 
       // update me object's cache
-      const { me } = cache.readQuery({ query: QUERY_ME });
-      cache.writeQuery({
-        query: QUERY_ME,
-        data: { me: { ...me, drinks: [...me.drinks, addDrink] } },
-      });
+      // const { me } = cache.readQuery({ query: QUERY_ME });
+      // cache.writeQuery({
+      //   query: QUERY_ME,
+      //   data: { me: { ...me, drinks: [...me.drinks, addDrink] } },
+      // });
     },
   });
 
@@ -52,6 +52,7 @@ const DrinkForm = () => {
       setDrinkTitle("");
       setDrinkIngredients("");
       setDrinkInstructions("");
+      // window.location.reload();
     } catch (err) {
       console.error(err);
     }
@@ -60,7 +61,7 @@ const DrinkForm = () => {
   const handleChange = (event) => {
     const { name, value } = event.target;
 
-    if (name === 'drinkTitle') {
+    if (name === "drinkTitle") {
       setDrinkTitle(value);
       // setCharacterCount(value.length);
     }
@@ -68,7 +69,7 @@ const DrinkForm = () => {
   const handleIngredientsChange = (event) => {
     const { name, value } = event.target;
 
-    if (name === 'drinkIngredients') {
+    if (name === "drinkIngredients") {
       setDrinkIngredients(value);
       // setCharacterCount(value.length);
     }
@@ -76,7 +77,7 @@ const DrinkForm = () => {
   const handleInstructionsChange = (event) => {
     const { name, value } = event.target;
 
-    if (name === 'drinkInstructions') {
+    if (name === "drinkInstructions") {
       setDrinkInstructions(value);
       // setCharacterCount(value.length);
     }
@@ -95,9 +96,7 @@ const DrinkForm = () => {
           >
             Character Count: {characterCount}/280
           </p> */}
-          <div
-            className="flex-row justify-center justify-space-between-md align-center"
-          >
+          <div className="flex-row justify-center justify-space-between-md align-center">
             <div className="col-12 col-lg-9">
               <textarea
                 name="drinkTitle"
@@ -128,7 +127,11 @@ const DrinkForm = () => {
             </div>
 
             <div className="col-12 col-lg-3">
-              <button onClick={handleFormSubmit} className="btn btn-primary btn-block py-3" type="submit">
+              <button
+                onClick={handleFormSubmit}
+                className="btn btn-primary btn-block py-3"
+                type="submit"
+              >
                 Add drink
               </button>
             </div>
