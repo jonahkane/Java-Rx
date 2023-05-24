@@ -25,13 +25,12 @@ export const ADD_USER = gql`
 `;
 
 export const ADD_DRINK = gql`
-  mutation addDrink($drinkTitle: String!, $drinkIngredients: String!, $drinkInstructions: String!, $drinkImage: String) {
-    addDrink(drinkTitle: $drinkTitle, drinkIngredients: $drinkIngredients, drinkInstructions: $drinkInstructions, drinkImage: $drinkImage) {
+  mutation addDrink($drinkTitle: String!, $drinkIngredients: String!, $drinkInstructions: String!) {
+    addDrink(drinkTitle: $drinkTitle, drinkIngredients: $drinkIngredients, drinkInstructions: $drinkInstructions) {
       _id
       drinkTitle
       drinkIngredients
       drinkInstructions
-      drinkImage
       drinkAuthor
       createdAt
       comments {
@@ -49,7 +48,6 @@ export const ADD_COMMENT = gql`
       drinkTitle
       drinkIngredients
       drinkInstructions
-      drinkImage
       drinkAuthor
       createdAt
       comments {

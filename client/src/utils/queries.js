@@ -11,7 +11,6 @@ export const QUERY_USER = gql`
         drinkTitle
         drinkIngredients
         drinkInstructions
-        drinkImage
         createdAt
       }
     }
@@ -25,7 +24,6 @@ export const QUERY_DRINKS = gql`
       drinkTitle
       drinkIngredients
       drinkInstructions
-      drinkImage
       drinkAuthor
       createdAt
     }
@@ -39,7 +37,6 @@ export const QUERY_SINGLE_DRINK = gql`
       drinkTitle
       drinkIngredients
       drinkInstructions
-      drinkImage
       drinkAuthor
       createdAt
       comments {
@@ -63,7 +60,6 @@ export const QUERY_ME = gql`
         drinkTitle
         drinkIngredients
         drinkInstructions
-        drinkImage
         drinkAuthor
         createdAt
       }

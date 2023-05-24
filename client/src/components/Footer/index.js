@@ -15,7 +15,7 @@ const Footer = () => {
             &larr; Go Back
           </button>
         )}
-        <h7>
+        <h6>
           Made with {''}
           <span
             className="emoji"
@@ -25,7 +25,7 @@ const Footer = () => {
             ☕️
           </span>{' '}
            by the Java Rx team.
-        </h7>
+        </h6>
       </div>
     </footer>
   );

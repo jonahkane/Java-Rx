@@ -14,7 +14,6 @@ const typeDefs = gql`
     drinkTitle: String
     drinkIngredients: [String!]!
     drinkInstructions: [String!]!
-    drinkImage: String
     drinkAuthor: String
     createdAt: String
     comments: [Comment]!
@@ -44,7 +43,7 @@ const typeDefs = gql`
   type Mutation {
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
-    addDrink(drinkTitle: String!, drinkIngredients: [String!]!, drinkInstructions: [String!]!, drinkImage: String): Drink
+    addDrink(drinkTitle: String!, drinkIngredients: [String!]!, drinkInstructions: [String!]!): Drink
     addComment(drinkId: ID!, commentText: String!): Drink
     removeDrink(drinkId: ID!): Drink
     removeComment(drinkId: ID!, commentId: ID!): Drink
