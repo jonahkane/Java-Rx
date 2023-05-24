@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Image } from "cloudinary-react";
 
@@ -8,6 +8,8 @@ const DrinkList = ({
   showTitle = true,
   showUsername = true,
 }) => {
+  useEffect(() => {}, [drinks]);
+
   if (!drinks?.length) {
     return <h3>No Drinks Yet</h3>;
   }
@@ -41,13 +43,6 @@ const DrinkList = ({
               <p>{drink.drinkTitle}</p>
               <p>{drink.drinkIngredients}</p>
               <p>{drink.drinkInstructions}</p>
-              <img src={drink.drinkImageURL} alt="coffee"></img>
-
-              <Image
-                style={{ width: 200 }}
-                cloudName="dtrmeorgv"
-                publicId="https://res.cloudinary.com/dtrmeorgv/image/upload/v1684729237/Cappuccino_bz4gia.jpg"
-              />
             </div>
             <Link
               className="btn btn-primary btn-block btn-squared"
