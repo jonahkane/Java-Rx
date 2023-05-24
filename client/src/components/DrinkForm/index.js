@@ -60,7 +60,7 @@ const DrinkForm = () => {
   const handleChange = (event) => {
     const { name, value } = event.target;
 
-    if (name === "drinkTitle" && value.length <= 280) {
+    if (name === 'drinkTitle') {
       setDrinkTitle(value);
       // setCharacterCount(value.length);
     }
@@ -68,7 +68,7 @@ const DrinkForm = () => {
   const handleIngredientsChange = (event) => {
     const { name, value } = event.target;
 
-    if (name === "drinkIngredients" && value.length <= 280) {
+    if (name === 'drinkIngredients') {
       setDrinkIngredients(value);
       // setCharacterCount(value.length);
     }
@@ -76,7 +76,7 @@ const DrinkForm = () => {
   const handleInstructionsChange = (event) => {
     const { name, value } = event.target;
 
-    if (name === "drinkInstructions" && value.length <= 280) {
+    if (name === 'drinkInstructions') {
       setDrinkInstructions(value);
       // setCharacterCount(value.length);
     }
@@ -95,9 +95,8 @@ const DrinkForm = () => {
           >
             Character Count: {characterCount}/280
           </p> */}
-          <form
+          <div
             className="flex-row justify-center justify-space-between-md align-center"
-            onSubmit={handleFormSubmit}
           >
             <div className="col-12 col-lg-9">
               <textarea
@@ -129,7 +128,7 @@ const DrinkForm = () => {
             </div>
 
             <div className="col-12 col-lg-3">
-              <button className="btn btn-primary btn-block py-3" type="submit">
+              <button onClick={handleFormSubmit} className="btn btn-primary btn-block py-3" type="submit">
                 Add drink
               </button>
             </div>
@@ -138,7 +137,7 @@ const DrinkForm = () => {
                 {error.message}
               </div>
             )}
-          </form>
+          </div>
         </>
       ) : (
         <p>

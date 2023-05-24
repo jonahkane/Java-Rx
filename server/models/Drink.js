@@ -9,10 +9,6 @@ const drinkSchema = new Schema({
     maxlength: 280,
     trim: true,
   },
-  drinkImage: {
-    type: String,
-    trim: true,
-  },
   drinkIngredients: {
     type: Array,
     required: true,
