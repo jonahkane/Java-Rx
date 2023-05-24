@@ -1,14 +1,14 @@
-const { AuthenticationError } = require('apollo-server-express');
-const { User, Drink } = require('../models');
-const { signToken } = require('../utils/auth');
+const { AuthenticationError } = require("apollo-server-express");
+const { User, Drink } = require("../models");
+const { signToken } = require("../utils/auth");
 
 const resolvers = {
   Query: {
     users: async () => {
-      return User.find().populate('drinks');
+      return User.find().populate("drinks");
     },
     user: async (parent, { username }) => {
-      return User.findOne({ username }).populate('drinks');
+      return User.findOne({ username }).populate("drinks");
     },
     drinks: async (parent, { username }) => {
       const params = username ? { username } : {};
@@ -19,9 +19,9 @@ const resolvers = {
     },
     me: async (parent, args, context) => {
       if (context.user) {
-        return User.findOne({ _id: context.user._id }).populate('drinks');
+        return User.findOne({ _id: context.user._id }).populate("drinks");
       }
-      throw new AuthenticationError('You need to be logged in!');
+      throw new AuthenticationError("You need to be logged in!");
     },
   },
 
@@ -35,20 +35,24 @@ const resolvers = {
       const user = await User.findOne({ email });
 
       if (!user) {
-        throw new AuthenticationError('No user found with this email address');
+        throw new AuthenticationError("No user found with this email address");
       }
 
       const correctPw = await user.isCorrectPassword(password);
 
       if (!correctPw) {
-        throw new AuthenticationError('Incorrect credentials');
+        throw new AuthenticationError("Incorrect credentials");
       }
 
       const token = signToken(user);
 
       return { token, user };
     },
-    addDrink: async (parent, { drinkTitle }, context) => {
+    addDrink: async (
+      parent,
+      { drinkTitle, drinkIngredients, drinkInstructions },
+      context
+    ) => {
       if (context.user) {
         const drink = await Drink.create({
           drinkTitle,
@@ -64,7 +68,7 @@ const resolvers = {
 
         return drink;
       }
-      throw new AuthenticationError('You need to be logged in!');
+      throw new AuthenticationError("You need to be logged in!");
     },
     addComment: async (parent, { drinkId, commentText }, context) => {
       if (context.user) {
@@ -81,7 +85,7 @@ const resolvers = {
           }
         );
       }
-      throw new AuthenticationError('You need to be logged in!');
+      throw new AuthenticationError("You need to be logged in!");
     },
     removeDrink: async (parent, { drinkId }, context) => {
       if (context.user) {
@@ -97,7 +101,7 @@ const resolvers = {
 
         return drink;
       }
-      throw new AuthenticationError('You need to be logged in!');
+      throw new AuthenticationError("You need to be logged in!");
     },
     removeComment: async (parent, { drinkId, commentId }, context) => {
       if (context.user) {
@@ -114,7 +118,7 @@ const resolvers = {
           { new: true }
         );
       }
-      throw new AuthenticationError('You need to be logged in!');
+      throw new AuthenticationError("You need to be logged in!");
     },
   },
 };
